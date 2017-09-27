@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>BSM Calendar Heatmap</title>
+	<link href="https://fonts.googleapis.com/css?family=Asap:400,500,700'" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>	
+	<div class="contentContainer">
+		<header>
+			<h1>BSM Data Calendar Heatmap</h1>
+		</header>
+		<div class="content">
+			<section id="heatmap"></section>
+		</div>
+		<div class="sidebar">
+			<section id="legend"></section>			
+			<section class="dataset-picker">
+				<p class="toggle-text">Pick a dataset: </p>
+				<div class="container" id="outer-container">
+					<div class="inner-container">
+						<div class="toggle">
+							<p>Vehicle</p>
+						</div>
+						<div class="toggle">
+							<p>Trip</p>				
+						</div>			
+					</div>
+					<div class="inner-container" id='toggle-container'>
+						<div class="toggle">
+							<p>Vehicle</p>
+						</div>
+						<div class="toggle">
+							<p>Trip</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="clear"></div>
+	</div>	
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+    <script type="text/javascript" src="js/toggle.js"></script>
+    <script type="text/javascript" src="js/heatmap.js"></script>
+
+</body>
+</html>
